@@ -1,0 +1,246 @@
+body{
+margin: 0;
+padding:0;
+width: 100%;
+}
+h1 {
+font-family: 'Source Sans Pro', sans-serif;
+font-weight:900;
+font-size: 46px;
+text-align: left;
+    color: #4A4A4A;
+    text-transform: uppercase;
+margin: 0;
+padding: 0;
+    z-index: 3;
+}
+h1-wht {
+font-family: 'Source Sans Pro', sans-serif;
+font-weight:900;
+font-size: 70px;
+text-align: left;
+    color: #f6e0c4;
+    text-transform: uppercase;
+margin: 0;
+padding: 0;
+    z-index: 3;
+    line-height: 1.8;
+}
+h2 {
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: 900;
+font-size: 40px;
+text-align: left;
+    color: #4A4A4A;
+    text-transform: uppercase;
+margin: 0;
+padding: 0;
+    z-index: 3;
+}
+h3 {
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: 900;
+font-size: 20px;
+text-align: left;
+    color: #4A4A4A;
+    text-transform: uppercase;
+margin: 5px 0;
+padding: 0;
+z-index: 1;
+position: relative;
+    z-index: 3;
+}
+h4 {
+font-family: 'Inconsolata', monospace;
+font-weight: 700;
+font-size: 14px;
+color: #4A4A4A;
+text-align: left;
+margin: 5px 0;
+padding: 0;
+z-index: 1;
+position: relative;
+    z-index: 3;
+}
+h4-wht {
+font-family: 'Inconsolata', monospace;
+font-weight: 700;
+font-size: 14px;
+color: #f6e0c4;
+text-align: left;
+margin: 5px 0;
+padding: 0;
+z-index: 1;
+position: relative;
+    z-index: 3;
+}
+p {
+/* Lorem ipsum dolor si: */
+font-family: 'Inconsolata', monospace;
+font-weight: 400;
+font-size: 18px;
+color: #4A4A4A;
+line-height: 30px;
+display: block;
+position: relative;
+    z-index: 3;
+}
+p-wht {
+/* Lorem ipsum dolor si: */
+font-family: 'Inconsolata', monospace;
+font-weight: 400;
+font-size: 18px;
+color: #f6e0c4;
+line-height: 30px;
+display: block;
+position: relative;
+    z-index: 3;
+}
+
+
+.center{margin: 0 auto;}
+.content{ margin: 0 auto; width: 960px;}
+.clear {clear:both; }
+
+.header {
+    width: 100%;
+    background: #1e1e1e;
+    height: 120px;
+    position: fixed;
+    z-index: 4;
+    display: none;
+}
+
+.open {
+    width: 100%;
+    background: #1e1e1e;
+    height: 120px;
+    position: fixed;
+    z-index: 4;
+}
+
+#about-img{
+    height:100%;
+    width:100%;
+    background:#28544b;
+    background-image: url(../img/about-img.jpg);
+    background-position: center center;
+    background-blend-mode: multiply;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#drawing-img{
+    zoom:2;
+    margin:auto;
+    height:auto;
+    width:100%;
+    background-color:#28544b;
+    background-image: url(../img/drawings.jpg);
+    background-position: center center;
+    background-blend-mode: multiply;
+    object-fit:contain;
+    transform:translateY(-40%);
+    z-index:-1;
+}
+
+.img-slide{
+    height: 200px;
+    margin:0;
+    background:#transparent;
+    background-size:cover;
+    z-index:-2;
+    overflow:hidden;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+#slide1, #slide2, #slide3, #slide4, #slide5{width:100%;}
+#slide1{
+    background:transparent;
+    height:300px;
+    margin:0;
+    padding: 200px 0 260px 0;
+    
+    z-index: -2;
+}
+#slide2{
+    background:#f6e0c4;
+    height:300px;
+    margin:0;
+    padding: 200px 0 260px 0;
+    background-size: cover;
+    z-index: -2;
+    overflow:hidden;
+}
+#slide3{
+    background:#f6e0c4;
+    height:300px;
+    margin:0;
+    padding: 200px 0 260px 0;
+    background-size: cover;
+    z-index: -2;
+}
+#slide4{
+    background:#f6e0c4;
+    height:300px;
+    margin:0;
+    padding: 200px 0 260px 0;
+    background-size: cover;
+    z-index: -2;
+}
+#slide5{
+    background:#28544b;
+    height:300px;
+    margin:0;
+    padding: 200px 0 260px 0;
+    background-size: cover;
+    z-index: 3;
+}
+.footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 30px 0 30px 0;
+    color: white;
+    text-align: left;
+}
+
+
+    
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 0; /* Stay on top */
+    top: 50%; /* Stay at the top */
+    transform: translateY(-50%);
+    right: 20px;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+.sidenav a {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: left;
+    color: #4A4A4A;
+    margin: 5px 0;
+    padding: 0;
+    z-index: 0;
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+.sidenav a:hover {
+    color: #FF302C;
+}

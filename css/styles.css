@@ -1,0 +1,204 @@
+/* for desktop */
+
+#site-background, #slide4{
+    background: #28544b;
+    overflow: scroll
+    z-index:0;
+    
+}
+
+.navbar{
+    position:fixed;
+    background: #1e1e1e;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width:100%;
+    overflow:hidden;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
+    z-index:5;
+}
+
+.navbar.shrink {
+    height: 90px;
+    background: #1e1e1e
+}
+
+
+#site-header, #slide1, #slide2, #slide3{
+    padding: 100px;
+    height: auto;
+    width: auto;
+}
+#slide4 {
+    padding: 100px;
+    padding-right: 200px;
+    width: auto;
+    height: 50vh;
+}
+
+#site-header{
+    height: 80vh;
+}
+
+#site-footer {
+    background:#1e1e1e;
+    padding:30px;
+    padding-left: 100px;
+}
+
+#slide1, #slide2, #slide3{
+    padding-right: 200px;
+    background: #f6e0c4;
+}
+
+.text-invert-color{
+    color: #f6e0c4;
+}
+
+.footer-text{
+    font-size: 14px;
+}
+
+h1, h2, h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #4A4A4A;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.cover-text-size-adjust{
+    font-size: 70px;
+}
+h2{
+    font-size: 48px;
+}
+h4{
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    color: #4A4A4A;
+    font-size: 14px;
+}
+
+p{
+    font-size: 18px;
+    color: #4A4A4A;
+    font-family: 'Inconsolata';
+    font-weight: 400;
+}
+
+#header-img {
+    background-image: url(../img/about-img.jpg);
+    background-color:#28544b;
+    background-blend-mode: darken;
+    height:auto;
+    width:100%;
+    top:0;
+    left:0;
+    background-size:cover;
+    background-repeat: no-repeat repeat;
+    background-attachment: fixed;
+}
+
+#contact-img {
+    background-image: url(../img/drawings.jpg);
+    background-color:#28544b;
+    background-blend-mode: darken;
+    height:auto;
+    width:100%;
+    top:0;
+    left:0;
+    background-size:cover;
+    background-repeat: no-repeat repeat;
+    background-attachment: fixed;
+}
+
+
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 0; /* Stay on top */
+    top: 40%; /* Stay at the top */
+    right:0px;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    z-index:3;
+}
+.sidenav a {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: left;
+    color: #4A4A4A;
+    padding: 0;
+    z-index: 3;
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+.sidenav a:hover {
+    color: #FF302C;
+}
+/* for tablet */
+
+
+/* for mobile */
+
+@media only screen and (max-width: 600px){
+    #site-header, #slide1, #slide2, #slide3{
+        padding: 35px;
+        padding-right: 50px;
+        height: auto;
+        width: auto;
+    }
+
+    #slide4 {
+        padding: 35px;
+        padding-right: 50px;
+        width: auto;
+        height: 50vh;
+    }
+    
+    #site-footer {
+        background:#1e1e1e;
+        padding:30px;
+        padding-left: 35px;
+        padding-right: 50px;
+    }
+    
+    .cover-text-size-adjust{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 30px;
+    } 
+    .sidenav{
+        display: none;
+    }
+    .navbar{
+    position:fixed;
+    background: #1e1e1e;
+    top: 0;
+    left: 0;
+    height: 110px;
+    width:100%;
+    overflow:hidden;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
+    z-index:5;
+    }
+
+    .navbar.shrink {
+        height: 50px;
+        background: #1e1e1e
+    }
+}
+  
